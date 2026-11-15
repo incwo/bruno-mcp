@@ -14,7 +14,7 @@ https://bruno.incwo.com/api/platform/v1/mcp
 
 Choose OAuth with automatic client registration when your client offers that choice. Sign in to Bruno at the Bruno authorization page, review the requested permissions and approve the connection. Your existing company and agent permissions continue to apply to each tool call.
 
-For Claude, add a custom remote connector, paste the URL above, and complete **Connect and authorize**. Directory availability depends on Claude's review; a prepared or submitted listing is not an approval.
+The general endpoint is intended for clients requiring the broader Bruno feature set. Directory profiles are documented separately below. Directory availability depends on each platform’s review; a prepared or submitted listing is not an approval.
 
 No shared server token or Bruno password belongs in an MCP configuration file or conversation. Native OAuth discovers the server metadata and handles the authorization flow.
 
@@ -55,6 +55,20 @@ https://bruno.incwo.com/api/platform/v1/mcp/openai
 Use this profile with an existing Bruno account. It excludes account registration, credential entry, subscription offers, checkout and transactional billing-portal links. Its permissions and native-operation catalogue are restricted on the server.
 
 The general profile includes additional account and subscription capabilities. Hosted payment links do not directly charge a card or activate an unpaid subscription; payment remains on the payment provider's page.
+
+## Claude directory profile
+
+The dedicated read-only profile prepared for Claude’s directory has a separate resource URL:
+
+```text
+https://bruno.incwo.com/api/platform/v1/mcp/claude
+```
+
+This profile is being delivered and tested for directory submission. It exposes 15 consultation tools with nine read scopes: identity, companies, members, existing agents, MCP-registered conversations and work orders, existing agent-creation records, files and artifacts, billing overview and platform events. It does not execute AI agents, generate images, video or audio, modify data, invite colleagues, initiate payments or expose generic native dispatch. Member and billing information require company administrator rights. Existing sharing rules still apply.
+
+The general profile retains its broader capabilities. The Claude profile uses a separate OAuth audience; its token cannot be used on the general or OpenAI endpoints. Its descriptions and public listing reflect this restricted scope.
+
+For a custom Claude connection, add the dedicated URL and complete **Connect and authorize**. The full general endpoint remains available to clients and workflows that support its wider capabilities.
 
 ## OAuth and administrator notes
 
