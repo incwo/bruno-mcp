@@ -64,7 +64,7 @@ The dedicated read-only profile prepared for Claude’s directory has a separate
 https://bruno.incwo.com/api/platform/v1/mcp/claude
 ```
 
-This profile is being delivered and tested for directory submission. It exposes 15 consultation tools with nine read scopes: identity, companies, members, existing agents, MCP-registered conversations and work orders, existing agent-creation records, files and artifacts, billing overview and platform events. It does not execute AI agents, generate images, video or audio, modify data, invite colleagues, initiate payments or expose generic native dispatch. Member and billing information require company administrator rights. Existing sharing rules still apply.
+This profile is deployed and has been submitted to Claude’s directory; its status is In review. It exposes 15 consultation tools with nine read scopes: identity, companies, members, existing agents, MCP-registered conversations and work orders, existing agent-creation records, files and artifacts, billing overview and platform events. It does not execute AI agents, generate images, video or audio, modify data, invite colleagues, initiate payments or expose generic native dispatch. Member and billing information require company administrator rights. Existing sharing rules still apply.
 
 The general profile retains its broader capabilities. The Claude profile uses a separate OAuth audience; its token cannot be used on the general or OpenAI endpoints. Its descriptions and public listing reflect this restricted scope.
 
@@ -97,6 +97,6 @@ Use synthetic data in a dedicated test workspace when evaluating a connector. Au
 
 ## Registry and repository contents
 
-The remote server metadata is published as [io.github.incwo/bruno 1.14.0 in the official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.incwo%2Fbruno/versions/1.14.0). Registry metadata, client directory review and software deployment are distinct states. OpenAI and Claude directory submissions are in preparation; no directory approval is claimed by this repository.
+The remote server metadata is published as [io.github.incwo/bruno 1.14.0 in the official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.incwo%2Fbruno/versions/1.14.0). Registry metadata, client directory review and software deployment are distinct states. The Claude directory submission is In review. OpenAI submission is being finalized. No directory approval is claimed by this repository.
 
 This repository contains connection documentation and public server metadata. The Bruno service is operated by incwo; service use is subject to the terms linked above.
