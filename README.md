@@ -52,7 +52,7 @@ The restricted profile used by the OpenAI submission has a separate resource URL
 https://bruno.incwo.com/api/platform/v1/mcp/openai
 ```
 
-Use this profile with an existing Bruno account. It excludes account registration, credential entry, subscription offers, checkout and transactional billing-portal links. Its permissions and native-operation catalogue are restricted on the server.
+Use this profile with an existing Bruno account. It excludes account registration, credential entry, subscription offers, checkout and transactional billing-portal links. It exposes a closed catalogue of 37 individually declared tools and 18 OAuth scopes. Generic native catalogue discovery and execution are excluded, including when an older grant contains broader scopes. The public profile is deployed; Bruno 1.14.0 has been submitted to OpenAI and its current status is In review. Directory review is pending.
 
 The general profile includes additional account and subscription capabilities. Hosted payment links do not directly charge a card or activate an unpaid subscription; payment remains on the payment provider's page.
 
@@ -97,6 +97,6 @@ Use synthetic data in a dedicated test workspace when evaluating a connector. Au
 
 ## Registry and repository contents
 
-The remote server metadata is published as [io.github.incwo/bruno 1.14.0 in the official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.incwo%2Fbruno/versions/1.14.0). Registry metadata, client directory review and software deployment are distinct states. The Claude directory submission is In review. OpenAI submission is being finalized. No directory approval is claimed by this repository.
+The remote server metadata is published as [io.github.incwo/bruno 1.14.0 in the official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.incwo%2Fbruno/versions/1.14.0). Registry metadata, client directory review and software deployment are distinct states. The OpenAI and Claude directory submissions are both In review under publisher incwo. No directory approval is claimed by this repository.
 
 This repository contains connection documentation and public server metadata. The Bruno service is operated by incwo; service use is subject to the terms linked above.
