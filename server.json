@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.incwo/bruno",
+  "title": "Bruno",
+  "description": "Bruno accounts, teams, agents, missions, files and subscription links through authenticated MCP.",
+  "version": "1.14.0",
+  "websiteUrl": "https://get-bruno.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://bruno.incwo.com/api/platform/v1/mcp"
+    }
+  ]
+}
